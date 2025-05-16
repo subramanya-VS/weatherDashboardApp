@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Sans:ital,wght@0,100..1000;1,100..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+.weather-card {
+      width: 550px;
+      padding: 2rem 1.5rem;
+      border-radius: 16px;
+      background: linear-gradient(135deg, #071af1, #76b3e6);
+      color: #d2d3db;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    /* search bar */
+    .search {
+    position: relative;
+    margin-bottom: 0rem;
+    display: flex;
+    }
+
+    .search input {
+        font-family: "Ancizar Sans", sans-serif;  
+        font-weight: 300;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        border: none;
+        border-radius: 999px;
+        font-size: 2rem;
+        outline: none;
+        background: #fff;
+        color: black;
+    }
+
+    .search button {
+    position: static; /* remove absolute positioning */
+    transform: none;
+    margin-left: 0; /* optional: reset margin */
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #8E2DE2;
+    background: #fff;
+    border: none;
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    }
+      .kpi-strip {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .kpi {
+      flex: 1;
+      background: var(--kpi-bg);
+      border-radius: calc(var(--card-radius)/2);
+      padding: 01rem;
+      text-align: center;
+      font-size: 2rem;
+    }
+    .kpi .value { font-weight: 600; display: block; }
+    
+  .weather-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;    /* controls vertical space between children */
+  }
+
+    /* weather icon */
+    .weather-icon {
+      width: 200px;
+      height: 200px;
+      margin: 0;         /* remove any default bottom margin */
+    }
+
+    .temp {
+      font-family: "Ancizar Sans", sans-serif;
+      font-size: 10rem;
+      font-weight: 600;
+      margin: 0;         /* remove default top/bottom margins */
+    }
+
+    .city {
+      font-family: "Ancizar Sans", sans-serif;
+      font-weight: 300;
+      font-size: 5rem;
+      text-align: center;
+      margin: 0.25rem 0 2rem;
+    }
+    .description {
+      font-family: "Ancizar Sans", sans-serif;
+      font-weight: 300;
+      font-size: 3rem;
+      text-align: center;
+      margin: 0.25rem 0 2rem;
+    }
+
+    /* bottom stats row */
+    .stats {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      gap: 0.75rem;
+    }
+    .stat-card {
+      background: var(--kpi-bg);
+      border-radius: calc(var(--card-radius)/2);
+      padding: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 1rem;
+    }
+    .stat-card .icon { font-size: 1.2rem; }
+
+    /* Utility */
+    .stat-card .label { opacity: 0.8; }
+    .stat-card .value { font-weight: 600; margin-left: auto; }
