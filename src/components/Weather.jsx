@@ -1,5 +1,5 @@
 import React,{ useState, useEffect,useRef } from "react";
-import "./weather.css";
+import "./Weather.css";
 import "../index.css";
 import {Search,Droplet,Wind,Waves,Mountain} from "lucide-react";
 
