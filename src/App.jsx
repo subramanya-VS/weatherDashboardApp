@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import Aurora from './components/Aurora'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Weather from './components/Weather'
 
