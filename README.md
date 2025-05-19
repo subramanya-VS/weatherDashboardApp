@@ -2,6 +2,10 @@
 
 A responsive weather dashboard that fetches and displays real-time weather information for a given city or the user's current location using the OpenWeatherMap API.
 
+## 🌐 Live Demo
+
+[Weather DashBoard](https://weatherdashboard-subramanya.vercel.app/)
+
 ## Features
 
 * Fetch weather by entering a city name
@@ -85,9 +89,6 @@ WEATHER_API_KEY=your_api_key_here
 npm run dev
 ```
 
-## Deployment
-
-Deploy the frontend on Vercel or Netlify, and the backend (if using) on Render or Heroku. Be sure to securely store the API key on the backend.
 
 ## License
 
